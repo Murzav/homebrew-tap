@@ -1,26 +1,26 @@
 class XcstringsMcp < Formula
   desc "MCP server for iOS/macOS .xcstrings localization files"
   homepage "https://github.com/Murzav/xcstrings-mcp"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Murzav/xcstrings-mcp/releases/download/v#{version}/xcstrings-mcp-aarch64-apple-darwin.tar.gz"
-      sha256 "791a83efc0b7c9e445c0a483701082e6ad8faae493643e81a179126f8cde9915"
+      sha256 "787fe9b95f457271b8afe4aaf97039f8b5b5d069b296f1a5e935c213e8c1a639"
     else
       url "https://github.com/Murzav/xcstrings-mcp/releases/download/v#{version}/xcstrings-mcp-x86_64-apple-darwin.tar.gz"
-      sha256 "f106dded853a4d3e74e8dbe0f411e3a4b65e74eb4b32a57cab68fe57f3d6482b"
+      sha256 "af48ccb3a49ad15dabd4c43b03b1edd7eadb592d0abeacfc41ff126bbfcad4bc"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Murzav/xcstrings-mcp/releases/download/v#{version}/xcstrings-mcp-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d46895671f271d40dc02ad6d40217bbebc6b02b463a4300cd32f684a5bdf0559"
+      sha256 "c9db44c4230856f4f497e98a20d0a44d6b1ec2d8029b44807e8f5c250dc3e562"
     else
       url "https://github.com/Murzav/xcstrings-mcp/releases/download/v#{version}/xcstrings-mcp-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d8b8106b3b951fa9208ed3d69b97805cb4f61029909dab93d4fd327236749cb1"
+      sha256 "04f1649ef26903473a084ef1b979ee884afdaaefc7d39a9a92ce910fa7021f9f"
     end
   end
 
